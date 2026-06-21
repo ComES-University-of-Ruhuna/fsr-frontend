@@ -16,14 +16,20 @@ export default function Footer() {
           <p className="mt-4 font-display text-lg tracking-[0.22em] text-gold-400">
             ENGINEERING DEFIANCE.
           </p>
-          <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-gold-500/25 bg-gold-500/5 px-3 py-1.5">
+          <a
+            href={SITE.comesUrl}
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label={`Visit ${SITE.websiteBy} — comesuor.lk`}
+            className="mt-6 inline-flex items-center gap-2 rounded-full border border-gold-500/25 bg-gold-500/5 px-3 py-1.5 transition hover:border-gold-500 hover:bg-gold-500/10"
+          >
             <span className="text-[9px] uppercase tracking-[0.28em] text-zinc-400">
-              Powered by
+              Website powered by
             </span>
             <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold-400">
               ComES
             </span>
-          </div>
+          </a>
         </div>
 
         <div>
@@ -112,8 +118,15 @@ export default function Footer() {
         <div className="container-page flex flex-col items-start justify-between gap-3 py-6 text-xs text-zinc-500 sm:flex-row sm:items-center">
           <p>© {new Date().getFullYear()} Formula Student Ruhuna — Marvel Crew. All rights reserved.</p>
           <p className="flex items-center gap-2 uppercase tracking-[0.22em]">
-            <span className="text-[10px] text-zinc-500">Powered by</span>
-            <span className="font-semibold text-gold-400">{SITE.poweredBy}</span>
+            <span className="text-[10px] text-zinc-500">Website powered by</span>
+            <a
+              href={SITE.comesUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="font-semibold text-gold-400 underline-offset-4 transition hover:text-gold-300 hover:underline"
+            >
+              {SITE.websiteBy}
+            </a>
           </p>
           <p className="tracking-[0.25em] uppercase">Design. Build. Innovate. Race.</p>
         </div>
